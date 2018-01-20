@@ -25,8 +25,12 @@
   <link href="startbootstrap-full-width-pics-master/css/full-width-pics.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/auth.css">
 
+  <!-- map css  -->
+  <link rel="stylesheet" href="assets/css/map.css">
+
   <!--Google Maps API Link-->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTQplToC7vrZZPdPirJm0clLpN3YbMW6U&libraries=places"></script>
+  <script src="assets/javascript/maplost.js"></script>
 
   <title id="logo">Find Fido</title>
 
@@ -113,6 +117,48 @@
               
               <button type="submit" class="btn btn-info" id="addTrainButton">Submit</button>
             </form>
+
+
+           <!-- Report Missing Dog Form-->
+           <form role="form">
+              <div class="form-group">
+                  <input type="text" class="form-control" id="dog-color-input" placeholder="Color">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="dog-size-input" placeholder="Size">
+              </div>
+              <div class="form-group">
+                  <input id="addr" type="text" value="Chicago,Il" placeholder="Location (Address or Place)">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="date-input" placeholder="MM/DD/YYYY (06/15/2016)">
+              </div>
+              </script>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="time-input" placeholder="Military (16:30)">
+              </div>
+              <button type="submit" class="btn btn-success" id="addDog">Submit</button>
+          </form>
+          <p>
+            <label for="addr">
+              <strong>Address</strong>
+            </label>
+            <br>
+            <!-- <input id="addr" type="text" value="Chicago,Il" size="80"> -->
+            <button id="creaMappa" type="button">Build map</button>
+          </p>
+          <p>Drag the cursor to change coordinates</p>
+          <p>
+            <strong>Coords</strong>:
+            <span id="lat">--</span>,
+            <span id="lng">--</span>
+          </p>
+          <div class="map" id="map1"></div>
+        </div>
+      
+      </div>
+  
+    </div>
             
           </div>
         </div>
@@ -245,6 +291,10 @@
   <!-- Javascript -->
   <script src="assets/javascript/main.js"></script> 
 
+  <!-- project javascript -->
+  <script src="assets/javascript/maplost.js"></script>
+  <script src="assets/javascript/login.js"></script>
+  <script src="assets/javascript/auto.js"></script>
 </body>
 
 </html>
