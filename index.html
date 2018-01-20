@@ -87,12 +87,12 @@
         </div>
         <div class="modal-body">
            
-           <!-- Report Missing Dog Form-->          <!-- Submission form for new trains -->
+           <!-- Report Missing Dog Form-->          <!-- Submission form for new dogs -->
           <div class="panel-body">
             <form>
               <div class="form-group">
                 <label for="">Breed</label>
-                <input type="text" class="form-control" id="trainNameInput">
+                <input type="text" class="form-control" id="dogNameInput">
               </div>
 
               <div class="form-group">
@@ -101,44 +101,24 @@
               </div>
 
               <div class="form-group">
-                <label for="">Color</label>
-                <input type="text" class="form-control" id="routeInput">
-              </div>
-
-              <div class="form-group">
-                <label for="">Missing Since (Date)</label>
-                <input type="text" class="form-control" id="trainTimeInput">
+                <label for="">Last Known Location</label>
+                <input type="text" class="form-control" id="addr" value="Chicago,Il" placeholder="Location (Address or Place)">
               </div>
 
               <div class="form-group">
                 <label for="">Missing Since (Time)</label>
-                <input type="text" class="form-control" id="frequencyInput">
+                <input type="text" class="form-control" id="dogTimeInput">
               </div>
+
+<!--               <div class="form-group">
+                <label for="">Missing Since (Date)</label>
+                <input type="text" class="form-control" id="frequencyInput">
+              </div> -->
               
-              <button type="submit" class="btn btn-info" id="addTrainButton">Submit</button>
+              <button type="submit" class="btn btn-info" id="addDog">Submit</button>
             </form>
 
 
-           <!-- Report Missing Dog Form-->
-           <form role="form">
-              <div class="form-group">
-                  <input type="text" class="form-control" id="dog-color-input" placeholder="Color">
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" id="dog-size-input" placeholder="Size">
-              </div>
-              <div class="form-group">
-                  <input id="addr" type="text" value="Chicago,Il" placeholder="Location (Address or Place)">
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" id="date-input" placeholder="MM/DD/YYYY (06/15/2016)">
-              </div>
-              </script>
-              <div class="form-group">
-                  <input type="text" class="form-control" id="time-input" placeholder="Military (16:30)">
-              </div>
-              <button type="submit" class="btn btn-success" id="addDog">Submit</button>
-          </form>
           <p>
             <label for="addr">
               <strong>Address</strong>
